@@ -1,5 +1,5 @@
 class hashCheck:
-    def __init__(self, hash):
+    def __init__(self, hash=""):
         self.hash = hash
 
     def hashCheck(self):
