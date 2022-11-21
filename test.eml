@@ -1,0 +1,88 @@
+Delivered-To: csc424projectdummy@gmail.com
+Received: by 2002:a4f:cb0a:0:0:0:0:0 with SMTP id r10csp2205678ivl;
+        Mon, 21 Nov 2022 09:42:26 -0800 (PST)
+X-Google-Smtp-Source: AA0mqf7L10DWyvB5t+lp19c3J5tiAtlcX8NDm0fSqmyPkigIFRQ4EwU1qxT0wiBCT3moTp0rRbFC
+X-Received: by 2002:a17:902:d590:b0:187:2dc3:27c with SMTP id k16-20020a170902d59000b001872dc3027cmr12647220plh.148.1669052546053;
+        Mon, 21 Nov 2022 09:42:26 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1669052546; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KYcfbIBF8yRnAYCOYcnw0M3h2fIt1QCATfSn5rccPNQ36P0WGovAhtdX9jz2+dbev9
+         k8p4L81/Iv7YKBV/BUuR+biuHNv8n0IuOWLxy/fU48LK2JCrVWncCwyM4Fnr9N8Umn5W
+         VdRoswXf8mPL3CqzmbR+UpvLl1lbNTU5OGRHwKmhoieJIiesG6SuQ7LYejhYB/x68NIh
+         ezSDNOo6pCq4vzCdtNf3Pl5wXIb4fA5HQMCmEnfg2MrXsCqgXXl9q9swFpmmuw0rkqBR
+         K9VNnKGSUBnH2c/dV7OsdOqwbjrtP2N3jsbCS/VuPH5kuUeF816arjZ2IW4JZBEJ8Is/
+         QtNQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=sender:errors-to:list-id:precedence:date:message-id:to:from:subject
+         :content-transfer-encoding:mime-version;
+        bh=2wrYiyD6LkhUHtfYc5ES30UpHnRojNAvdNZpM4M/uxk=;
+        b=V3SmRWM2mbGlThEOB58PkKH69SWx4+SnkGDk5N387ZuNpSPkm9uCBISWvBW+1/CveH
+         isYECP6qJteFnDNMGeALQcUFrUubYXWIdOZcCXrTMoU+YQVJizZuCI+UeZrGZHVq5L+W
+         PZJ35dnnHHzjhymdwtzJ19VJZvxpjr3N4EuS59HZ1iuMLP99EvrYsucY1fJVQrh+aNwr
+         R2NnH+ZUjnnmqxDUROubiarcBT87HyjPD5CbeuPZ5zda6SQHsdWFb2A3VAwccDc3DsPJ
+         tp38mPjw9LwRfSTwvxLMohJxhwviBSYMZz5A/EvZncgt+cJIcOl5Z6vUXLYBJnDG0HiX
+         uZ3w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=none (google.com: maillists.uci.edu does not designate permitted sender hosts) smtp.mailfrom=tec-bounces@maillists.uci.edu
+Return-Path: <tec-bounces@maillists.uci.edu>
+Received: from maillists.oit.uci.edu (maillists.oit.uci.edu. [128.200.217.201])
+        by mx.google.com with ESMTP id s20-20020a632154000000b00477931a9ba7si725143pgm.279.2022.11.21.09.42.25
+        for <csc424projectdummy@gmail.com>;
+        Mon, 21 Nov 2022 09:42:26 -0800 (PST)
+Received-SPF: none (google.com: maillists.uci.edu does not designate permitted sender hosts) client-ip=128.200.217.201;
+Authentication-Results: mx.google.com;
+       spf=none (google.com: maillists.uci.edu does not designate permitted sender hosts) smtp.mailfrom=tec-bounces@maillists.uci.edu
+Received: from maillists.oit.uci.edu (localhost [127.0.0.1])
+	by maillists.oit.uci.edu (Postfix) with ESMTP id BCFFB114068
+	for <csc424projectdummy@gmail.com>; Mon, 21 Nov 2022 09:42:25 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Subject: Welcome to the "TEC" mailing list (Digest mode)
+From: tec-request@maillists.uci.edu
+To: csc424projectdummy@gmail.com
+X-No-Archive: yes
+Message-ID: <mailman.0.1669052544.13937.tec@maillists.uci.edu>
+Date: Mon, 21 Nov 2022 09:42:24 -0800
+Precedence: bulk
+X-BeenThere: tec@maillists.uci.edu
+X-Mailman-Version: 2.1.15
+List-Id: UCI's Technology Enhanced Classrooms <tec.maillists.uci.edu>
+X-List-Administrivia: yes
+Errors-To: tec-bounces@maillists.uci.edu
+Sender: "TEC" <tec-bounces@maillists.uci.edu>
+
+Welcome to the TEC@maillists.uci.edu mailing list!
+
+To post to this list, send your message to:
+
+  tec@maillists.uci.edu
+
+General information about the mailing list is at:
+
+  https://maillists.uci.edu/mailman/listinfo/tec
+
+If you ever want to unsubscribe or change your options (eg, switch to
+or from digest mode, change your password, etc.), visit your
+subscription page at:
+
+  https://maillists.uci.edu/mailman/options/tec/csc424projectdummy%40gmail.com
+
+
+You can also make such adjustments via email by sending a message to:
+
+  TEC-request@maillists.uci.edu
+
+with the word `help' in the subject or body (don't include the
+quotes), and you will get back a message with instructions.
+
+You must know your password to change your options (including changing
+the password, itself) or to unsubscribe without confirmation.  It is:
+
+  -Raymond8
+
+Normally, Mailman will remind you of your maillists.uci.edu mailing
+list passwords once every month, although you can disable this if you
+prefer.  This reminder will also include instructions on how to
+unsubscribe or change your account options.  There is also a button on
+your options page that will email your current password to you.
