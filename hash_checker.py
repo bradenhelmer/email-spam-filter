@@ -2,8 +2,13 @@
 # ~~~~~~~~~~~~~~~
 # Function to check hashes against blacklisted emails
 
+class hashCheck:
+    def __init__(self, hash=""):
+        self.hash = hash
 
-def hash_checker(hash_to_check: str) -> bool:
-    with open("spam_hashes.txt") as hashes:
-        stripped = [line.rstrip() for lines in hashes.readlines()]
-        return hash_to_check in stripped
+    def hashCheck(self):
+        file = open('spam_hashes.txt', 'r')
+        Lines = file.readlines()
+        if self.hash in Lines:
+            return True
+        return False

@@ -3,7 +3,7 @@
 # This puts all the components of the spam filter together
 import link_checker
 import unsub_checker
-from hash_checker import hash_checker
+from hash_checker import hashCheck
 
 from os.path import exists
 import eml_parser
@@ -32,7 +32,7 @@ def main():
     parsed_email = parser.decode_email_bytes(raw_email)
     
     #TODO run spam checks through the dictionary representation of the email
-    spam_hash = hash_checker(parsed_email["body"][0]["hash"])
+    spam_hash = hashCheck(parsed_email["body"][0]["hash'"]).hashCheck()
     
     #TODO Add logic to write new hashes and links to txt files if determined spam
 
