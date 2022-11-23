@@ -58,7 +58,7 @@ def main():
     print(f"Does the email carry a known spam hash: {spam_hash}")
     print(f"Does the email carry a known black-listed link: {spam_blacklisted}")
     print(f"Does the email not have an unsubscribe button: {spam_unsubscribe}")
-    
+
     # Adding hash to spam_hashes.txt if not before
     if not spam_hash and (spam_blacklisted or spam_unsubscribe):
         hc.add_hash()

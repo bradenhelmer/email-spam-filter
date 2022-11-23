@@ -23,6 +23,7 @@ class LinkChecker:
     def link_check(self) -> bool:
         with open("blacklisted_links.txt") as file:
             links = file.readlines()
+            links = [link.rstrip() for link in links]
             for tag in self.link_tags:
                 if tag["href"] in links:
                     return True
