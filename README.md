@@ -61,6 +61,7 @@ class LinkChecker:
     def link_check(self) -> bool:
         with open("blacklisted_links.txt") as file:
             links = file.readlines()
+            links = [link.rstrip() for link in links]
             for tag in self.link_tags:
                 if tag["href"] in links:
                     return True
@@ -76,10 +77,11 @@ This is the main execution of the program, bringing the above 3 classes together
 6. If any checks are true: print "Email is Spam!" else "Email is not Spam!"
 
 # Examples
-### Blacklisted hash. 
-### Blacklisted link.
-### No unsubscribe link.
-### Normal Email.
-
-
-
+### Blacklisted hash.
+![bad_hash](https://user-images.githubusercontent.com/77756408/203658946-85a64033-e383-4dd8-9205-ccc01892172b.jpeg)
+The hash for this email is c5bb32205c7c618ae35c72c6711dcecb30a7ef88a3115c0d82663d9954f94404, which is in the spam_hashes.txt file
+![Screenshot_2022-11-23_17-50-33](https://user-images.githubusercontent.com/77756408/203659180-fe39fbc9-3484-41f6-9ee8-b6836b896f09.png)
+### Blacklisted link / No unsubscribe link
+![BIDEN](https://user-images.githubusercontent.com/77756408/203661308-9a502f14-d3c0-421d-ba4a-10dc35c53e45.jpeg)
+The href for this link is https://usa.gov which is in the blacklisted_links.txt file
+![Screenshot_2022-11-23_18-12-05](https://user-images.githubusercontent.com/77756408/203661660-1ee5bec0-05bf-44b9-bcce-4efc336557b4.jpg)
