@@ -2,6 +2,7 @@
 # ~~~~~~~~~~~~~~~
 # Handler to check hashes against blacklisted emails
 
+# test comment 
 
 class HashCheck:
     def __init__(self, hash=""):
